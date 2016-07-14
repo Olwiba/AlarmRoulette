@@ -14,6 +14,6 @@ app.use(favicon(path.join(__dirname, '/../public/favicon.ico')))
 console.log('********************************************')
 console.log('Server status: Online')
 console.log('********************************************')
-console.log('Cryptonite is listening on port: ' + port);
+console.log('Server is listening on port: ' + port);
 console.log('********************************************')
 app.listen(port)

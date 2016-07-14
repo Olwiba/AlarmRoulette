@@ -14,7 +14,7 @@
     "type": "git",
     "url": "https://github.com/Olwiba/AlarmRoulette"
   },
-  "author": "",
+  "author": "Team More Fun",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Olwiba/AlarmRoulette/issues"
@@ -34,15 +34,12 @@
     "webpack": "^1.13.1"
   },
   "dependencies": {
-    "crypto-js": "^3.1.6",
     "domready": "^1.0.8",
-    "encrypter": "^1.0.0-beta",
     "express": "^4.14.0",
     "express-history-api-fallback": "^2.0.0",
     "react": "^15.2.0",
     "react-bootstrap": "^0.29.5",
     "react-dom": "^15.2.0",
-    "react-github-corner": "^0.3.0",
     "react-router": "^2.5.2",
     "serve-favicon": "^2.3.0"
   }
