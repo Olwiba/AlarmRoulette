@@ -5,6 +5,7 @@ class Home extends Component {
 
   render () {
     return (
+      <h1>Welome to the home page</h1>
     )
   }
 
