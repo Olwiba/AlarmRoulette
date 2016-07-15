@@ -5,8 +5,9 @@ class AddAlarm extends Component {
 
   render () {
     return (
-      <h1>Set up youralarm</h1>
-
+      <div>
+        <h1>Set up your alarm</h1>
+      </div>
     )
   }
 
