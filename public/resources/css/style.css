@@ -1,7 +1,76 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,100italic,100,400italic);
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,600,500,700);
+@import url(https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,600,700,800);
+/* Default styling*/
+
+
 body {
   margin: 0;
-  background-color: #bada55; }
+  background-color: #FF2C55;
+}
 
-h1 {
-  color: #0e0e0e;
-  font-size: 1.5em; }
+h1, h2, h3 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  color: #ededed;
+  font-size: 2.5em;
+}
+
+h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #7D1128;
+}
+
+p, a {
+  text-decoration: none;
+  font-family: 'Karla', serif;
+  font-weight: 400;
+  color: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/* */
+
+.content {
+  top: 7%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+}
+
+/* Button / Input Styling */
+
+#chooseName {
+  padding: 9px 20px;
+  border-radius: 3px;
+}
+
+button, #chooseName  {
+  margin: 0;
+  margin: 20px 2%;
+	text-transform: none;
+	font-family: 'Karla', Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-weight: 300;
+	color: white;
+  background-color: #FF2C55;
+	border: white solid 1px;
+	border-radius: 3px;
+	padding: 9px 20px;
+}
+
+button:hover  {
+  color: white;
+	border-radius: 3px;
+	border: white solid 1px;
+	background-color: #2E1349;
+}
