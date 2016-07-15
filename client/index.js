@@ -6,6 +6,7 @@ import App from './components/App'
 import Home from './components/Home'
 import LandingPage from './components/LandingPage'
 import AddAlarm from './components/AddAlarm'
+import AlarmSet from './components/AlarmSet'
 
 render((
   <Router history={browserHistory}>
@@ -13,7 +14,9 @@ render((
       <IndexRoute component={LandingPage}>
         <Route path="/Home" component={Home}/>
       </IndexRoute>
-      <Route path="/AddAlarm" component={AddAlarm}/>
+      <Route path="/addAlarm" component={AddAlarm}>
+        <Route path="/alarmSet" component={AlarmSet}/>
+      </Route>
     </Route>
   </Router>
 ), document.getElementById('app'))
