@@ -3,6 +3,7 @@ logs
 *.log
 npm-debug.log*
 
+.env
 .DS_Store
 
 # Runtime data
@@ -37,3 +38,5 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+bundle.js
