@@ -45,12 +45,6 @@ function postToTwitter(message) {
   })
 }
 
-// function postToTumblr(message) {
-//   Tumblr(message, 'genericstuff', tumblr_auth, function(error, response) {
-//     console.log("Hit Tumblr")
-//   })
-// }
-
 function postToTumblr(message) {
   client.createTextPost('genericstuff', {type: 'text', title: 'Sleepyhead', body: message }, function(err, res) {
     if (err) {
