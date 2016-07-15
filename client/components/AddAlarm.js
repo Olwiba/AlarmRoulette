@@ -1,16 +1,15 @@
 import React, { Component } from 'react'
 import NavLink from './NavLink'
 
-class App extends Component {
+class AddAlarm extends Component {
 
   render () {
     return (
-      <div>
-      {this.props.children}
-      </div>
+      <h1>Set up youralarm</h1>
+
     )
   }
 
 }
 
-export default App
+export default AddAlarm

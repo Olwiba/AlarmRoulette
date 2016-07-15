@@ -5,7 +5,12 @@ class Home extends Component {
 
   render () {
     return (
-      <h1>Welome to the home page</h1>
+    	<div>
+      		<h1>Welome to the home page</h1>
+      		<NavLink to="/AddAlarm"><button  type="button">click me</button></NavLink>
+
+      	</div>
+
     )
   }
 
