@@ -27,7 +27,7 @@ class Home extends Component {
       <div className="homePage">
     		<h1>Hello, {this.props.name}</h1>
         <h2>{this.getCurrentTime()}</h2>
-    		<NavLink to="/AddAlarm"><button  type="button">click me</button></NavLink>
+    		<NavLink to="/AddAlarm"><button  type="button">Add Alarm</button></NavLink>
     	</div>
     )
   }
