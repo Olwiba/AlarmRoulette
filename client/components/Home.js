@@ -11,7 +11,7 @@ class Home extends Component {
   render () {
     console.log('name: ', this.props.name)
     return (
-      <div className="content">
+      <div className="homePage">
     		<h1>Hello, {this.props.name}</h1>
     		<NavLink to="/AddAlarm"><button  type="button">click me</button></NavLink>
     	</div>
