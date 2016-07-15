@@ -10,8 +10,9 @@ import AddAlarm from './components/AddAlarm'
 render((
   <Router history={browserHistory}>
     <Route path="/" component={App}>
-      <IndexRoute component={LandingPage}/>
-      <Route path="/Home" component={Home}/>
+      <IndexRoute component={LandingPage}>
+        <Route path="/Home" component={Home}/>
+      </IndexRoute>
       <Route path="/AddAlarm" component={AddAlarm}/>
     </Route>
   </Router>

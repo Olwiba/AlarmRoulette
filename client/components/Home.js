@@ -3,14 +3,18 @@ import NavLink from './NavLink'
 
 class Home extends Component {
 
+  constructor(props) {
+    super(props)
+  }
+
+
   render () {
+    console.log('name: ', this.props.name)
     return (
-    	<div>
-      		<h1>Welome to the home page</h1>
-      		<NavLink to="/AddAlarm"><button  type="button">click me</button></NavLink>
-
-      	</div>
-
+      <div className="content">
+    		<h1>Hello, {this.props.name}</h1>
+    		<NavLink to="/AddAlarm"><button  type="button">click me</button></NavLink>
+    	</div>
     )
   }
 
