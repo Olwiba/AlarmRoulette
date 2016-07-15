@@ -8,7 +8,8 @@
     "start": "node server/index",
     "dev": "nodemon server/index",
     "build": "cd client && webpack --progress --profile --colors",
-    "build:watch": "cd client && webpack --progress --profile --colors --watch"
+    "build:watch": "cd client && webpack --progress --profile --colors --watch",
+    "build-css": "node-sass --include-path scss public/resources/scss/main.scss   public/resources/css/style.css --watch"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-0": "^6.5.0",
     "enzyme": "^2.3.0",
+    "node-sass": "^3.8.0",
     "nodemon": "^1.9.2",
     "react-addons-test-utils": "^15.2.0",
     "tap-spec": "^4.1.1",
