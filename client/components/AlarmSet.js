@@ -8,6 +8,15 @@ class AlarmSet extends Component {
 
   }
 
+    getCurrentTime() {
+    var hours = new Date().getHours()
+    var minutes = new Date().getMinutes()
+    var seconds = new Date().getSeconds()
+
+    var currentTime = hours + ":" + minutes + ":" + seconds
+
+    return currentTime
+  }
 
   render () {
     return (
@@ -15,10 +24,9 @@ class AlarmSet extends Component {
     		<h1>Alarm Set For:</h1>
         <h2>{this.props.alarmTime}</h2>
         <h1>Time Now:</h1>
-        <h2>9:00 am</h2>
+        <h2>{this.getCurrentTime()}</h2>
         <h1>If you dont get up, Im going to send:</h1>
         <h2>{this.props.secret}</h2>
-    		<NavLink to="/AddAlarm"><button  type="button">click me</button></NavLink>
     	</div>
     )
   }

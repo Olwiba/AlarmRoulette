@@ -27,7 +27,7 @@ class LandingPage extends Component {
   render () {
     return (
     	<div className="landingPage">
-    		<h1>Landing Page</h1>
+    		<h1>Alarm Roulette</h1>
     		<input type="text" id="chooseName" placeholder="enter name here" onChange={this.nameChange.bind(this)}/>
          <NavLink to="/home"><a onClick={this.showHome.bind(this)}>Enter</a></NavLink>
         {this.state.showHome ? <Home name={this.state.name} /> : <div></div>}
