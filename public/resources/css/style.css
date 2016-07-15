@@ -10,11 +10,18 @@ body {
   background-color: #FF2C55;
 }
 
-h1, h2, h3 {
+h1, h3 {
   font-family: 'Work Sans', sans-serif;
   font-weight: 700;
   color: #ededed;
   font-size: 2.5em;
+}
+
+h2 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  color: #ededed;
+  font-size: 1.5em;
 }
 
 h4, h5, h6 {
@@ -30,6 +37,24 @@ p, a {
   color: white;
 }
 
+input {
+  margin: 0;
+  margin: 20px 2%;
+  text-transform: none;
+  font-family: 'Karla', Helvetica, sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  color: white;
+  background-color: #FF2C55;
+  border: white solid 1px;
+  border-radius: 3px;
+  padding: 9px 20px;
+}
+
+input::-webkit-input-placeholder {
+   color: rgba(0, 0, 0, 0.4);;
+}
+
 input:focus,
 select:focus,
 textarea:focus,
@@ -37,14 +62,25 @@ button:focus {
     outline: none;
 }
 
-/* */
+/* Layout */
 
 .content {
-  top: 7%;
   width: 100%;
   height: 100%;
   position: absolute;
   text-align: center;
+}
+
+.landingPage, .homePage, .alarmSet, .addAlarm {
+  top: 0;
+  padding: 10% 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+.homePage, .alarmSet {
+  background-color: #06D6A0;
 }
 
 /* Button / Input Styling */
