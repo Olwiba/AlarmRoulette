@@ -35,7 +35,6 @@ class AddAlarm extends Component {
   render () {
     return (
       <div>
-        <h1>Set up your alarm</h1>
         <h2>Enter alarm time:</h2>
         <input type="time" onChange={this.timeChange.bind(this)}/>
         <h2>Enter your Secret:</h2>
